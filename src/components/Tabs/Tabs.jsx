@@ -21,6 +21,7 @@ export const Tabs = ({ tabs, onTabSelected, activeTabId }) => {
                 'is-active': tab.id === selectedTab().id,
               })}
               data-cy="Tab"
+              key={tab.id}
             >
               <a
                 href={`#${tab.id}`}
